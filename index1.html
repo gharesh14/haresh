@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Node.js</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1, h2 {
+            color: #393a3b;
+        }
+
+        p {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Introduction to Node.js</h1>
+
+    <p><strong>Node.js</strong> is a JavaScript runtime built on Chrome's V8 JavaScript engine. It allows developers to run JavaScript code server-side, outside of a web browser. Here are some key concepts:</p>
+
+    <h2>1. Server-Side JavaScript</h2>
+    <p>Node.js enables the execution of JavaScript code on the server, opening the door to server-side development using a language traditionally associated with client-side scripting in web browsers.</p>
+
+    <h2>2. Asynchronous I/O</h2>
+    <p>Node.js is designed to be non-blocking and asynchronous, making it well-suited for handling concurrent operations. This is achieved through event-driven, non-blocking I/O operations.</p>
+
+    <h2>3. npm (Node Package Manager)</h2>
+    <p><strong>npm</strong> is the package manager for Node.js. It allows developers to easily install and manage third-party libraries (packages) to enhance the functionality of their applications.</p>
+
+    <h2>4. Common Use Cases</h2>
+    <p>Node.js is commonly used for building:</p>
+    <ul>
+        <li>Web servers and APIs</li>
+        <li>Real-time applications (chat applications, online gaming)</li>
+        <li>Command-line tools</li>
+        <li>Microservices</li>
+        <li>Desktop applications using frameworks like Electron</li>
+    </ul>
+
+    <h2>5. Getting Started</h2>
+    <p>To start using Node.js, you need to:</p>
+    <ol>
+        <li>Install Node.js from the official website: <a href="https://nodejs.org/" target="_blank">https://nodejs.org/</a></li>
+        <li>Use a text editor to write JavaScript code</li>
+        <li>Run your code using the Node.js runtime</li>
+    </ol>
+
+    <p>Here's a simple example:</p>
+    <code>
+        const http = require('http');<br>
+        const server = http.createServer((req, res) => {<br>
+        &nbsp;&nbsp;res.writeHead(200, {'Content-Type': 'text/plain'});<br>
+        &nbsp;&nbsp;res.end('Hello, Node.js!');<br>
+        });<br>
+        server.listen(3000, 'localhost', () => {<br>
+        &nbsp;&nbsp;console.log('Server running at http://localhost:3000/');<br>
+        });
+    </code>
+
+    <p>For more in-depth tutorials and documentation, visit the official Node.js website: <a href="https://nodejs.org/" target="_blank">https://nodejs.org/</a></p>
+</body>
+</html>

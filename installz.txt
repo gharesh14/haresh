@@ -1,0 +1,73 @@
+PS E:\node js basics> npm init 
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help init` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (node-js-basics)
+version: (1.0.0)                                                                                                                      
+description:                                                                                                                          
+entry point: (hello.js)                                                                                                               
+test command:
+git repository:                                                                                                                       
+keywords:                                                                                                                             
+author:                                                                                                                               
+license: (ISC)                                                                                                                        
+About to write to E:\node js basics\package.json:
+
+{
+  "name": "node-js-basics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "hello.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
+
+
+Is this OK? (yes)
+PS E:\node js basics> 
+PS E:\node js basics> 
+PS E:\node js basics>
+PS E:\node js basics>
+PS E:\node js basics>
+PS E:\node js basics> yes
+yes : The term 'yes' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of 
+the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ yes
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (yes:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS E:\node js basics> npm install 
+
+up to date, audited 1 package in 438ms
+
+found 0 vulnerabilities
+PS E:\node js basics> 
+PS E:\node js basics> npm i express
+
+added 62 packages, and audited 63 packages in 3s
+
+11 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS E:\node js basics> 
+PS E:\node js basics> & 'e:\node js basics\server.js'
+PS E:\node js basics> 
+                    > & 'e:\node js basics\server.js'
+PS E:\node js basics> 
+                      ^C
+PS E:\node js basics> node server
+runing
